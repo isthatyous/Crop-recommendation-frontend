@@ -78,7 +78,72 @@ export default function HomePage() {
               className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-          {/* Repeat for other fields... */}
+          <div className="flex flex-col">
+            <label htmlFor="P" className="text-lg font-semibold text-gray-700 mb-2"> Phosphorous </label>
+            <input
+              type="number"
+              id="P"
+              value={formData.P}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="K" className="text-lg font-semibold text-gray-700 mb-2"> Potassium </label>
+            <input
+              type="number"
+              id="K"
+              value={formData.K}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="temperature" className="text-lg font-semibold text-gray-700 mb-2"> Temperature (°C) </label>
+            <input
+              type="number"
+              id="temperature"
+              value={formData.temperature}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="humidity" className="text-lg font-semibold text-gray-700 mb-2"> Humidity (%) </label>
+            <input
+              type="number"
+              id="humidity"
+              value={formData.humidity}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="ph" className="text-lg font-semibold text-gray-700 mb-2"> pH </label>
+            <input
+              type="number"
+              id="ph"
+              value={formData.ph}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+          <div className="flex flex-col">
+            <label htmlFor="rainfall" className="text-lg font-semibold text-gray-700 mb-2"> Rainfall (mm) </label>
+            <input
+              type="number"
+              id="rainfall"
+              value={formData.rainfall}
+              onChange={handleInputChange}
+              placeholder="Type here"
+              className="input input-bordered w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
 
           {/* Submit Button */}
           <div className="col-span-4 text-center">
