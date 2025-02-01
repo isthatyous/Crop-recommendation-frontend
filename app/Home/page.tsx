@@ -36,7 +36,7 @@ export default function HomePage() {
         rainfall: parseFloat(formData.rainfall),
       };
 
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('https://crop-recommendation-backend-jcdd.onrender.com/predict', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
